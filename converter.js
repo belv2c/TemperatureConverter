@@ -8,12 +8,18 @@ function toCelsius (tempInput2) {
     var tempInput = parseInt(tempInput2.value);
     var celsius = (tempInput - 32) / 1.8;
     returnTemp.innerHTML = celsius;
+     celsius > 32 ? returnTemp.style.color = "red"
+       : (celsius < 0 ? returnTemp.style.color = "blue"
+         : returnTemp.style.color = "green");
 }
 
 function toFahrenheit (tempInput2) {
     var tempInput = parseInt(tempInput2.value);
     var fahrenheit = (tempInput * 1.8) + 32;
     returnTemp.innerHTML = fahrenheit;
+    fahrenheit > 90 ? returnTemp.style.color = "red"
+       : (fahrenheit < 32 ? returnTemp.style.color = "blue"
+         : returnTemp.style.color = "green");
 }
 
 function determineConverter () {

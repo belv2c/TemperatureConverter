@@ -1,1 +1,37 @@
-# body
+
+.mainContainer {
+	display: flex;
+	flex-direction: column;
+	background-color: #b2dfdb;
+	box-shadow: 4px 5px 18px -10px grey;
+	border-radius: 20px;
+	height: 100%;
+	width: 350px;
+	justify-content: center
+
+
+}
+
+.child1 {
+	justify-content: center;
+	margin: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+#tempInput {
+	height: 20px;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+#tempForm {
+	text-align: center;
+	padding: 13px;
+	font-family: 'Roboto', sans-serif;
+}
+

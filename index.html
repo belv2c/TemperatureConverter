@@ -2,17 +2,20 @@
 <html>
 <head>
     <title>Temperature Converter</title>
-    
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 
+<div class = "mainContainer">
     <h1>Temperature Converter</h1>
 
     <form id="tempForm">
-        Temperature
+        <div class = child1> Temperature </div>
         <input type="text" name="tempInput" id="tempInput">
     <br>
     Convert to:<br>
+
   <input type="radio" name="radioTemp" id="radioCelsius" value="Celsius"> Celsius<br>
   <input type="radio" name="radioTemp" id="radioFahrenheit" value="Fahrenheit"> Fahrenheit<br>
 
@@ -21,8 +24,10 @@
 
 <h2 id="returnTemp"></h2>
 
-    <input type="button" onclick="resetForm()" value="Reset">
+    <input type="button" value="Refresh Page" onClick="window.location.reload()">
 </form>
+</div>
+
 
     <script type="text/javascript" src="converter.js"></script>
 
